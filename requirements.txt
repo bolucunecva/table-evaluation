@@ -1,0 +1,11 @@
+numpy
+tqdm
+pandas
+sacrebleu
+bert-score
+transformers
+unidecode
+sentence_transformers
+gradio
+rouge_score
+Levenshtein
