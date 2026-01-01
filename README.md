@@ -1,3 +1,4 @@
+# (figures/t2t.png) Text2TabEval: A Python Library for Unified Evaluation of Text-to-Table Generation
 ---
 title: Table Evaluation
 emoji: 🚀
@@ -11,3 +12,4 @@ short_description: table evaluation
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
