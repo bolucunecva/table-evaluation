@@ -16,8 +16,7 @@
 - [Quickstart](#quickstart-)
 - [Datasets](#datasets-)
 - [Documentation](#documentation-)
-- [Contributing](#contributing-)
-<!--- [Citation](#citation-) -->
+- [Contributing](#contributing-) <!--- [Citation](#citation-) -->
 - [Authors](#authors-)
 - [Related Projects](#related-projects-)
 - [License](#license-)
@@ -102,3 +101,4 @@ See [LICENSE](LICENSE).
 
 
 <!-- Ask License?? -->
+
