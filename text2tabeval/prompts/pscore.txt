@@ -1,1 +1,22 @@
+We want to evaluate how similar the following LaTeX tables are.
 
+Table 1:
+{table1}
+
+Table 2:
+
+{table2}
+
+Based on the above, we wanted to determine if the above tables are similar. Ideally they should have identical content and structure. Score the "content similarity" and "structural similarity" between 0 and 10. 
+
+- Content similarity: 10 if the contents of the table cells are identical, 0 if they are entirely different. If about 50% of the cells have the same data, the score should be 5.
+- Structural similarity: 10 if the tables have the same structure (e.g. same column and rows with identical ordering, same alignment, etc) although text formatting differences can be ignored (e.g. colors, font).
+
+Output a JSON object such as the following:
+
+{{
+"content_similarity": <number between 0 and 10>,
+"structural_similarity": <number between 0 and 10>
+}}
+
+Think carefully, and then output the scores.

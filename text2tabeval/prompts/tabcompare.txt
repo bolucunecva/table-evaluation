@@ -1,0 +1,44 @@
+INSTRUCTIONS:
+You are given a table where each cell is "value1/value2". Determine differences between value1 (from Table 1) 
+and value2 (from Table 2). If a cell is "-", skip it; if both parts are empty, output "[-]". Use the column headers (also 
+"header1/header2") as context for:
+1. Data Type (Numerical, String, List, Date, Time, Boolean, Others, Empty)
+2. Entity (Person, Organization, Location, Date, Time, Money, Percent, Facility, Event, Product, Work of Art, 
+Language, Nationality, Ordinal, Cardinal, Others)
+3. Unit (determine from context or values; if none, use "None")
+4. Missing/Extra Info (e.g., if something appears only in one part)
+5. Difference (format depends on Data Type: numerical → absolute difference, date → difference in days, time 
+→ difference in seconds, etc.)
+For each cell, output a 5-element tuple:
+[DataType1/DataType2, Entity1/Entity2, Unit1/Unit2, Missing/Extra Info, Difference]
+Output: Only the final table (Markdown) with these tuples, keeping the same structure as the input table. No extra 
+explanations.
+EXAMPLES:
+Text
+Example 1
+Input Table:
+| Director.T1/Director.T2 | Writer.T1/Writer.T2 | Original Air Date/Air Date | Production 
+Code/Prod. Code |
+|:------------------------|:---------------------|:---------------------------|:---------------------------|
+| Richard Dale/R. Dale    
+| Tim Loane/T. Loane  | 21 March 2001/21/03/2001   | 101/106        
+|
+| ...                     
+Output Table:
+|
+| Director.T1/Director.T2                                              
+| ...                 
+| ...                        
+| Original Air Date/Air Date                         
+| Production Code/Prod. Code                                    
+| ...            
+| Writer.T1/Writer.T2 
+|
+|:---------------------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------------------------|:--------------------------------------------------------------|
+| [String/String, Person/Person, None/None, None, abbreviated string:Richard Dale -> R. Dale] 
+| [String/String, Person/Person, None/None, None, abbreviated string:Tim Loane -> T. Loane] | 
+[Date/Date, Date/Date, None/None, None, absolute difference:0:days:] | [Numerical/Numerical, 
+Cardinal/Cardinal, None/None, None, ab                                                      
+...                                                               
+| ...                      
+|

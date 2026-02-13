@@ -1,0 +1,53 @@
+INSTRUCTIONS:
+Given three tables — Table 1, Table 2, and a Partially Aligned Table — your goal is to align Table 1 and Table 2 using the Partially Aligned Table and output a Final Aligned Table in Markdown.
+Follow this general algorithm:
+1. Compare Table 1 and Table 2, keep differences in mind.
+2. If one table appears to be a transpose of the other, take the transpose to match structures.
+3. Use the Partially Aligned Table to align remaining rows and columns.
+4. If a row or column cannot be matched, keep it as extra and fill with - (dash).
+5. Handle multiple possible mappings carefully (multi-mapping).
+6. Ensure the Partially Aligned Table is part of the final output.
+7. Place unmatched rows/columns at the end of the table.
+8. Recheck for correct alignment of columns, rows, and cells.
+9. Include all cells from both Table 1 and Table 2 in the Final Aligned Table.
+10. Do not omit any columns from either table.
+
+If the Partially Aligned Table is None, simply perform alignment without it. Output only the final aligned table in Markdown (no extra text).
+
+Format for the Final Aligned Table:
+- Each cell is written as cell1/cell2 (where cell1 is from Table 1 and cell2 from Table 2).
+- If a value is missing in one table, use a dash: -/cell2 or cell1/-.
+- Each row must have the same number of columns.
+- Do not add columns that do not exist in either table.
+
+Examples:
+Table 1:
+| Year | Competition | Venue | ...
+| ...  | ...    | ...  | ...
+
+Table 2:
+| Year | Place | Country | ...
+| ...  | ...   | ...    | ...          
+
+ | ...                    
+ | ...
+Partially Aligned Table:
+| Year.T1/Year.T2 | Position.T1/Position.T2 | ...
+| 2011/2011     | 2nd/2nd       | ...
+| ...   | ...  | ...
+
+Output (shortened):
+| Year.T1/Year.T2 | Competition.T1/- | Venue.T1/Place.T2 | ... |
+| ...            | ...     | ...    | ... |
+
+The final alignment shows all matched and unmatched columns/rows, with slashes and dashes where appropriate.
+
+Tables:
+Table 1:
+{table1}
+
+Table 2:
+{table2}
+
+Partially Aligned Table:
+{partial_table}

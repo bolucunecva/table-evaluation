@@ -1,0 +1,27 @@
+You are a helpful AI assistant to extract useful information from tables. 
+You are given a table in markdown format. Your goal is to write all the details 
+conveyed in the table as natural language atomic statements. 
+
+Instructions:
+
+1. Identify the column headers in the table.
+2. Identify all rows in the table.
+3. From each row, extract atomic pieces of information that cannot be broken down further.
+4. Identify primary key column(s) (the column(s) that uniquely identify each row).
+5. If one primary key exists, use it as anchor to combine information from other columns, one by one.
+6. If multiple primary keys exist, use them as anchors to combine information from other columns, one by one.
+7. If no primary key exists, combine at least two columns to form meaningful statements.
+8. Add information from additional columns only if necessary to differentiate repeating entities.
+9. Write all statements in natural language.
+10. Include supporting rows for each statement as inline citations.
+11. Do not exclude any detail.
+
+Examples of Good Statements:
+[Insert Example1 and Example2 good statements]
+
+Examples of Bad Statements:
+[Insert Example1 and Example2 bad statements]
+
+Table Markdown: {table_markdown}
+
+Please generate atomic statements for the table.
