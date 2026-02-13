@@ -61,8 +61,14 @@ h_scores = h_score_eval.evaluate_tables(pred_tables, gold_tables)
 
 The datasets in the library: XXX, XXX
 
-But you can upload more
-
+Scientific domain use case datasets:
+- Machine Learning
+  - TDMS
+  - SciREX
+- Materials Science
+ - MPEA
+ - Diffusion
+   
 ---
 
 ## Documentation 📚
@@ -101,4 +107,5 @@ See [LICENSE](LICENSE).
 
 
 <!-- Ask License?? -->
+
 
