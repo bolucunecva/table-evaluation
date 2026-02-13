@@ -85,9 +85,12 @@ tabeval_results = tabeval.evaluate_tables(
 
 ## Datasets 📊
 
-The datasets in the library: XXX, XXX
+The datasets in the library: 
+- [E2E](https://aclanthology.org/W17-5525/)
+- [Rotowire](https://aclanthology.org/D17-1239/)
+- [WikiTableText](https://aclanthology.org/D16-1128/)
 
-Scientific domain use case datasets:
+Scientific domain use-case datasets:
 - Machine Learning
   - TDMS
   - SciREX
@@ -118,6 +121,7 @@ To contribute:
 - Stephen Wan
 
 ---
+
 
 
 
