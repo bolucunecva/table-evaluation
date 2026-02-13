@@ -1,1 +1,16 @@
+[project]
+name = "text2tabeval"
+version = "0.1.0"
+description = "Evaluation library for text-to-table generation"
+authors = [{name="Your Name"}]
+readme = "README.md"
+requires-python = ">=3.8"
 
+dependencies = [
+  "numpy",
+  "pandas"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
